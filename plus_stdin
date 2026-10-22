@@ -7,12 +7,6 @@ for line in sys.stdin:
         x += int(line)    #intは文字列を整数に（失敗すると例外発生）
     except ValueError:    #第3回で見たエラーの名前
         x += float(line)
-<<<<<<< HEAD
-for line in sys.stdin:
-    line = line.rstrip()    #for文の下にこの行を挿入
-    x += tonum(line)
-=======
 x += tonum(line.rstrip())   #line.rstrip()で末尾の改行を除去
 
->>>>>>> 6ab42e39f99709be2c2ae2786f0d32dc12d45679
 print(x)
